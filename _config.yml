@@ -12,6 +12,6 @@ description:
   <a href="https://www.linkedin.com/in/cyrusbh//">View my LinkedIn Profile</a>
 
 theme: jekyll-theme-minimal
-show_downloads: ["true"]
+show_downloads: [true]
 github:
   resume: https://drive.google.com/uc?export=download&id=1W7baKLnv8iS2zKtxEQv2MF71n60VYFpb
