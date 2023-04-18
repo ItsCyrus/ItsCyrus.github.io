@@ -27,14 +27,6 @@ a:hover {
     color: #82b1ff;
 }
 
-footer {
-    background-color: #121212;
-    padding: 1rem;
-    text-align: center;
-    font-size: 0.9rem;
-    color: #ccc;
-}
-
 /* Navbar Styles */
 .navbar {
     display: flex;
