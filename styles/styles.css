@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;800&display=swap");
 
-/* Base styles */
+/* Global Styles */
 body {
   background-color: #1d1d28;
   color: #f5f5f5;
@@ -55,46 +55,107 @@ a:hover {
   color: #007bff;
 }
 
-/* Main styles */
+/* Main Styles */
 main {
-  padding: 5rem;
+  padding: 2rem;
 }
 
 section {
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 
-object {
+/* Introduction Section */
+#introduction {
+  text-align: center;
+}
+
+#introduction h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+#introduction p {
+  font-size: 1.5rem;
+}
+
+/* Resume Section */
+#resume {
+  text-align: center;
+}
+
+#resume object {
   width: 100%;
   height: 800px;
 }
 
-
-@media only screen and (max-width: 600px) {
+@media (max-width: 768px) {
+  /* Main Styles */
   main {
-    padding: 3rem 1.5rem;
-  }
-
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .nav-links {
-    margin-top: 1rem;
-  }
-
-  .nav-links a {
-    display: block;
-    margin-bottom: 0.5rem;
+    padding: 1rem;
   }
 
   section {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
 
-  object {
+  /* Introduction Section */
+  #introduction h1 {
+    font-size: 2rem;
+  }
+
+  #introduction p {
+    font-size: 1.2rem;
+  }
+
+  /* Navbar Styles */
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 6rem;
+  }
+
+  .nav-brand {
+    margin-bottom: 1rem;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     width: 100%;
+  }
+
+  .nav-links a {
+    margin: 0 1rem;
+    font-size: 1.2rem;
+  }
+
+  /* Resume Section */
+  #resume object {
     height: 600px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Introduction Section */
+  #introduction h1 {
+    font-size: 1.8rem;
+  }
+
+  #introduction p {
+    font-size: 1rem;
+  }
+
+  /* Navbar Styles */
+  .nav-links a {
+    margin: 0 0.5rem;
+    font-size: 1rem;
+  }
+
+  /* Resume Section */
+  #resume object {
+    height: 400px;
   }
 }
